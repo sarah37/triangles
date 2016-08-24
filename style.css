@@ -1,0 +1,20 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: "Oswald", Arial, sans-serif;
+}
+
+#svgDiv {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0;
+	padding: 20px;
+}
+
+polyline {
+	shape-rendering: geometricPrecision;
+	fill: #fff;
+}

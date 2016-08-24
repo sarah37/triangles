@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>&Delta;&Delta;&Delta;</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="inputs.css">
+		<link rel="icon" type="image/png" href="icon.png"> 
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  </head>
+
+<body>
+
+<div id="svgDiv"></div>
+<input type="button" value="show options" id="optionsButton">
+<div id="options" class="hidden">
+		<div><h1>Colour Scheme</h1>
+		<div class="radioButton" id="grey"><label><input type="radio" name="colourScheme" class="colourScheme" value="0" hidden><span>grey</span></label></div>
+		<div class="radioButton" id="rainbow"><label><input type="radio" name="colourScheme" class="colourScheme" value="1" checked hidden><span>rainbow</span></label></div>
+		</div>
+<!-- more colour options; not implemented
+		<div class="radioButton" id="black"><label><input type="radio" name="colourScheme" class="colourScheme" value="2" hidden><span>black</span></label></div>
+		<div class="radioButton" id="oneColour"><label><input type="radio" name="colourScheme" class="colourScheme" value="3" hidden><span>one colour</span></label></div>
+-->
+	
+	<div><h1>Speed of colour change</h1>
+	<input type="range" id="rainbowSpeed" min="1" max="20" step="1" value="5" />
+	<span class="left">slower</span><span class="right">faster</span>
+	<span class="clear"></span>
+	</div>
+	
+	<div><h1>Size of triangles</h1>
+	<input type="range" id="triangleSize" min="20" max="500" step="1" value="150" />
+	<span class="left">smaller</span><span class="right">larger</span>
+	<span class="clear"></span>
+	</div>
+	<div><h1>Speed</h1>
+	<input type="range" id="transitionsPerMin" min="6" max="120" step="1" value="20" />
+	<span class="left">slower</span><span class="right">faster</span>
+	<span class="clear"></span>
+	</div>
+	<div><h1>Randomness</h1>
+	<input type="range" name="" id="randomness" min="0.1" max="1" step="0.01" value="0.8" />
+	<span class="left">less</span><span class="right">more</span>
+	<span class="clear"></span>
+	</div>
+	<a href="https://github.com/sarah37/triangles" id="githublink">View on Github</a>
+</div>
+
+
+<script type="text/javascript" src="triangles.js"></script>
+
+</body>
+</html>
