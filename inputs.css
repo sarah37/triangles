@@ -170,6 +170,16 @@ input[type="radio"] {
 	background-color: #c3e8ff;
 }
 
+#pastel input:checked + span {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ddcdde), to(#ebedf2));
+	background: -webkit-linear-gradient(left, #ddcdde, #ebedf2);
+	background: -moz-linear-gradient(left, #ddcdde, #ebedf2);
+	background: -o-linear-gradient(left, #ddcdde, #ebedf2);
+	background: -ms-linear-gradient(left, #ddcdde, #ebedf2);
+	background: linear-gradient(left, #ddcdde, #ebedf2);
+	background-color: #ddcdde;
+}
+
 /* in case I want to implement more colour schemes
 #black input:checked + span {
   transition: all 0.5s;

@@ -231,5 +231,13 @@ function colour(scheme, q) {
 	if (scheme == 1) {
 		var c = d3.hsl(q, 0.5, (Math.random()*0.5+0.3))
 	}
+	// pastel
+	if (scheme == 2) {
+		var h = Math.random() * 130 + 200;
+		console.log(h);
+		var s = 0.2;
+		var l = Math.random() * 0.2 + 0.8;
+		var c = d3.hsl(h,s,l);
+	}
 	return c;
 }
